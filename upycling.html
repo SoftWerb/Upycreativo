@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Upycreativo</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="img/upslia.png" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Upycling</p>
+    </div>
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="img/upslia.png" width="160" height="50" alt="Grilli - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="img/upslia.png" width="160" height="50" alt="Grilli - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+
+                            <span class="span">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="main.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Quienes Somos</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item dropdown">
+                        <a href="Catenguinas.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Categorías</span>
+                        </a>
+                       <div class="dropdown-content">
+                            <a href="Catenguinas.html">Mochila</a>
+                            <a href="Catenguinas.html">Bolsos tote de mezclilla</a>
+                            <a href="Catenguinas.html">Sombrero de pescador</a>
+                        </div>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="upycling.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Upycling</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Contacto</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visítanos</p>
+
+                    <address class="body-4">
+                        Carrera  <br>
+                        81# 76a-10
+
+                    </address>
+
+                    <p class="body-4 navbar-text">Abierta: 9.30 am - 2.30pm</p>
+
+                    <a href="Brendalinares@gmail.com" class="body-4 sidebar-link"> Brendalinares@gmail.com</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Solicitud de reserva</p>
+
+                    <a href="tel:+57 322 7243375" class="body-1 contact-number hover-underline">
+                        +57 322 7243375
+                    </a>
+                </div>
+
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Suscribirme</span>
+
+                <span class="text text-2" aria-hidden="true">Suscribirme</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="https://img.freepik.com/foto-gratis/cooperacion-disenadores-moda-nueva-coleccion_329181-14342.jpg?t=st=1747251821~exp=1747255421~hmac=a045e1cae9acff999df7f49952d58085cb5f910928fc0d07e898b24d50c363da&w=1380"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Ahorras, creas y cuidas el planeta:<br>
+                            eso es upcycling.
+                        </h1>
+
+
+                        <a href="main.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+
+                            <span class="text text-2" aria-hidden="true">Proceso Upycling</span>
+                        </a>
+
+                    </li>
+
+
+
+
+                </ul>
+
+               <a href="#" class="hero-btn has-after">
+                    <img src="img/upslia.png" width="48" height="48" alt="booking icon">
+
+                    <span class="label-2 text-center span">UPYCLING</span>
+                </a>
+
+            </section>
+
+
+
+            <!-- 
+        - #FEATURES
+      -->
+
+            <section class="section features text-center" aria-label="features">
+                <div class="container">
+
+                   
+
+                    <h2 class="headline-1 section-title">
+                        Upcycling</h2>
+
+                    <ul class="grid-list">
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+
+                                <div class="card-icon">
+                                    <img src="https://www.ambientum.com/wp-content/uploads/2024/07/upcycling-reciclaje-textil-696x464.jpg"
+                                        width="340" height="180" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 card-title">Nuestros Materiales</h3>
+
+                                <p class="label-1 card-text">Upcycling Colombia
+                                    En Reemade los materiales que usamos han atravesado el cielo del mundo entero porque
+                                    en algún momento tuvieron alas, han recorrido las carreteras de Colombia en cuatro y
+                                    hasta 8 ruedas o han sido desechados por los sistemas de producción y consumo
+                                    actuales.
+
+                                    Amamos transformar residuos, como textiles post-industriales, residuos de industrias
+                                    como el turismo, el transporte terrestre o aéreo y todos los residuos en los que
+                                    encontremos belleza y potencial, Nuestros materiales los adquirimos a través de
+                                    asociaciones de reciclados o alianzas con empresas.</p>
+
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-card">
+
+                                <div class="card-icon">
+                                    <img src="https://blog.signus.es/wp-content/uploads/2022/10/Persona-cosiendo-a-mano-1024x536.jpg"
+                                        width="340" height="180" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 card-title">Procesos de Fabricación</h3>
+
+                                <p class="label-1 card-text">Nuestros materiales pasan por un proceso de renovación
+                                    desde la clasificación, limpieza y transformación a través de tejidos, cortes y
+                                    reconstrucción gracias a la colaboración de una mano de obra impecable.
+
+                                    Así cada diseño de Reemade es un manifiesto al crecimiento personal de nuestros
+                                    artesanos, con cada nueva técnica que aprenden, mientras desde el interior de
+                                    nuestro negocio apoyamos la generación de empleo en el país.
+
+                                    En nuestras redes puedes ver más acerca de nuestros procesos</p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- 
+        - #SPECIAL DISH
+      -->
+
+            <section class="special-dish text-center" aria-labelledby="dish-label">
+
+                <div class="special-dish-banner">
+                    <img src="https://i.pinimg.com/736x/a7/f4/8e/a7f48e929a0ea859fb14c0efcaa6e53f.jpg"
+                        width="140" height="40" loading="lazy" alt="special dish" class="img-cover">
+                </div>
+
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
+
+                        
+
+
+                        <h2 class="headline-1 section-title">ECONOMIA CIRCULAR
+                        </h2>
+
+                        <p class="section-text">
+                            El upcycling es una práctica clave de la economía circular que transforma los residuos en nuevos productos con mayor valor. En lugar de descartar los materiales, el upcycling busca darles una nueva vida útil y utilidad, reduciendo la demanda de recursos naturales y la generación de residuos. Es una forma creativa y sostenible de reutilizar materiales y productos, contribuyendo a la economía circular.
+                        </p>
+
+
+
+                        
+                    </div>
+                </div>
+                
+
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer section has-bg-image text-center"
+        style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="container">
+
+            <div class="footer-top grid-list">
+
+                <div class="footer-brand has-before has-after">
+
+                    <a href="#" class="logo">
+                        <img src="img/upslia.png" width="160" height="50" loading="lazy" alt="grilli home">
+                    </a>
+
+                    <address class="body-4">
+                        Carrera 81# 76a-10
+                    </address>
+
+                    <a href=" Brendalinares@gmail.com" class="body-4 contact-link"> Brendalinares@gmail.com</a>
+
+                    <a href="tel:+88123123456" class="body-4 contact-link">Solicitud de reserva : +57 322 7243375</a>
+
+                    <p class="body-4">
+                        Abierta: 9.30 am - 2.30pm
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <p class="title-1">Upycling Reciclaje De La Segunda</p>
+
+                    <p class="label-1">
+                        Subscribe us & Get <span class="span">25% Off.</span>
+                    </p>
+
+                    <form action="" class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico" autocomplete="off"
+                                class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Subscribe</span>
+
+                            <span class="text text-2" aria-hidden="true">Subscribe</span>
+                        </button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="index.html" class="label-2 footer-link hover-underline">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="main.html" class="label-2 footer-link hover-underline">Quienes Somos</a>
+                    </li>
+
+                    <li>
+                        <a href="Catenguinas.html" class="label-2 footer-link hover-underline">Categorías</a>
+                    </li>
+
+                    <li>
+                        <a href="upycling.html" class="label-2 footer-link hover-underline">Upycling</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="label-2 footer-link hover-underline">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="https://www.facebook.com/brendasofia.linaresvillamil" class="label-2 footer-link hover-underline">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/brendisofy16/" class="label-2 footer-link hover-underline">Instagram</a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://www.google.com/maps" class="label-2 footer-link hover-underline">Google Map</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html"
+                        target="_blank" class="link">Reciclaje</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

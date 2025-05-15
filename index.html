@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Upycreativo</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="img/upslia.png" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Upycling</p>
+    </div>
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="img/upslia.png" width="160" height="50" alt="Grilli - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="img/upslia.png" width="160" height="50" alt="Grilli - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="main.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Quienes Somos</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item dropdown">
+                        <a href="Catenguinas.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">categorías</span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Catenguinas.html">Mochila</a>
+                            <a href="Catenguinas.html">Bolsos tote de mezclilla</a>
+                            <a href="Catenguinas.html">Sombrero de pescador</a>
+                        </div>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="upycling.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Upycling</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Contacto</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visítanos</p>
+
+                    <address class="body-4">
+                        Carrera <br>
+                        81# 76a-10
+
+                    </address>
+
+                    <p class="body-4 navbar-text">Abierta: 9.30 am - 2.30pm</p>
+
+                    <a href="Brendalinares@gmail.com" class="body-4 sidebar-link"> Brendalinares@gmail.com</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Solicitud de reserva</p>
+
+                    <a href="tel:+57 322 7243375" class="body-1 contact-number hover-underline">
+                        +57 322 7243375
+                    </a>
+                </div>
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Suscribirme</span>
+
+                <span class="text text-2" aria-hidden="true">Suscribirme</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="/img/upcycling-modajpg.webp" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            La ropa mediante <br>
+                            el reciclaje creativo
+                        </h1>
+
+
+
+                        <a href="Catenguinas.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="/img/00040DIOR_Vogueint_24sep19_credit_Jamie-Stoker.webp" width="1880"
+                                height="950" alt="" class="img-cover">
+                        </div>
+
+
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Upcycling es transformar <br>
+                            lo usado en algo único y útil
+                        </h1>
+
+
+
+                        <a href="Catenguinas.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="https://www.lavozdemichoacan.com.mx/wp-content/uploads/2024/07/FotoJet1231.jpg"
+                                width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            El arte de renovar ropa usada <br>
+                            con conciencia y estilo.
+                        </h1>
+
+                        <a href="Catenguinas.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View Our Menu</span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <a href="#" class="hero-btn has-after">
+                    <img src="img/upslia.png" width="48" height="48" alt="booking icon">
+
+                    <span class="label-2 text-center span">UPYCLING</span>
+                </a>
+
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="section service bg-black-10 text-center" aria-label="service">
+                <div class="container">
+
+
+
+                    <h2 class="headline-1 section-title">Nuestros recomendados</h2>
+
+                    <p class="section-text">
+                        Upcycling y Artesanía Diseños sostenibles muebles y accesorios para el hogar y oficina.
+                    </p>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 337px;">
+                                        <img src="img/b8bf7137e6b5972d16fdcc21613e9af2.jpg" width="285" height="337"
+                                            loading="lazy" alt="Breakfast" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+
+                                    <h3 class="title-4 card-title">
+                                        <a href="Catenguinas.html">Mujer</a>
+                                    </h3>
+
+                                     <a href="Catenguinas.html" class="btn-text hover-underline label-2">Entre</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 337px;">
+                                        <img src="/img/4ab1fab41e78e592bb7708a13078368a.jpg" width="285" height="336"
+                                            loading="lazy" alt="Appetizers" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+
+                                    <h3 class="title-4 card-title">
+                                        <a href="Catenguinas.html">Hombre</a>
+                                    </h3>
+
+                                    <a href="Catenguinas.html" class="btn-text hover-underline label-2">Entre</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="card-banner img-holder" style="--width: 285; --height: 337px;">
+                                        <img src="https://i.pinimg.com/736x/b2/4f/4f/b24f4fc4aab2520e365d7ee75e340249.jpg" width="285" height="336"
+                                            loading="lazy" alt="Drinks" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="card-content">
+
+                                    <h3 class="title-4 card-title">
+                                        <a href="Catenguinas.html">Accesorios</a>
+                                    </h3>
+
+                                    <a href="Catenguinas.html" class="btn-text hover-underline label-2">Entre</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <img src="/img/needle-and-thread-vector-sticker-cartoon_561629_wh860-Photoroom.png" width="246"
+                        height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+                    <img src="/img/d7d15b2a5785684e834e21f496602e5a-Photoroom.png" width="343" height="345"
+                        loading="lazy" alt="shape" class="shape shape-2 move-anim">
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about text-center" aria-labelledby="about-label" id="about">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="label-2 section-subtitle" id="about-label"></p>
+
+                        <h2 class="headline-1 section-title">Productos</h2>
+
+                        <p class="section-text">
+                            El upcycling se refiere a la transformación de objetos o materiales viejos o desechados en
+                            nuevos productos de mayor valor, estética o funcionalidad. Esto puede incluir la creación de
+                            ropa, muebles, decoración, accesorios y más, utilizando materiales como telas, cartón,
+                            madera, plástico, vidrio o incluso alimentos.
+                        </p>
+
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="text text-1">Read More</span>
+
+                            <span class="text text-2" aria-hidden="true">Read More</span>
+                        </a>
+
+                    </div>
+
+                    <figure class="about-banner">
+
+                        <img src="https://img.freepik.com/foto-gratis/ilustracion-estilo-arte-digital-disenador-moda_23-2151537677.jpg?t=st=1747160977~exp=1747164577~hmac=e92b547862ac6c474590bc900c29b9d02db6565e10dc3905ca68cff701eed76e&w=1380"
+                            width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item
+                            data-parallax-speed="1">
+
+                        <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+                            <img src="https://img.freepik.com/foto-gratis/ilustracion-estilo-arte-digital-disenador-moda_23-2151537719.jpg?t=st=1747161200~exp=1747164800~hmac=7bf7a57fd1dc9c9f46186ac3ed348ac518b64bca414f58ddfdfc3ad5d07a4a27&w=1380"
+                                width="285" height="285" loading="lazy" alt="" class="w-100">
+                        </div>
+
+                        <div class="abs-img abs-img-2 has-before">
+                            <img src="img/pngtree-the-2025-logo-png-image_13161815-Photoroom.png" width="133"
+                                height="134" loading="lazy" alt="">
+                        </div>
+
+                    </figure>
+
+                    <img src="img/291766e216804c71add4e27314d5ddb7-Photoroom.png" width="197" height="194"
+                        loading="lazy" alt="" class="shape">
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SPECIAL DISH
+      -->
+
+            <section class="special-dish text-center" aria-labelledby="dish-label">
+
+                <div class="special-dish-banner">
+                    <img src="https://cdn.bioguia.com/embed/02619a6b8b163324a5c8f0da0359609b989e1603718477/reciclar-ropa.jpg?imagick=1&size=1000"
+                        width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+                </div>
+
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
+
+
+
+                        <h2 class="headline-1 section-title">Por que la reciclaje Upcyling en la segunda ropa
+                        </h2>
+
+                        <p class="section-text">
+                            El reciclaje de ropa, o "upcycling," es una forma de reutilización creativa que transforma
+                            prendas viejas o no deseadas en nuevas piezas de mayor valor o calidad, reduciendo residuos
+                            y fomentando una moda más sostenible
+                        </p>
+
+
+
+                        <a href="upycling.html" class="btn btn-primary">
+                            <span class="text text-1">View All Menu</span>
+
+                            <span class="text text-2" aria-hidden="true">Upycling</span>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer section has-bg-image text-center"
+        style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="container">
+
+            <div class="footer-top grid-list">
+
+                <div class="footer-brand has-before has-after">
+
+                    <a href="#" class="logo">
+                        <img src="img/upslia.png" width="160" height="50" loading="lazy" alt="grilli home">
+                    </a>
+
+                    <address class="body-4">
+                        Carrera 81# 76a-10
+                    </address>
+
+                    <a href=" Brendalinares@gmail.com" class="body-4 contact-link"> Brendalinares@gmail.com</a>
+
+                    <a href="tel:+88123123456" class="body-4 contact-link">Solicitud de reserva : +57 322 7243375</a>
+
+                    <p class="body-4">
+                        Abierta: 9.30 am - 2.30pm
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <p class="title-1">Upycling Reciclaje De La Segunda</p>
+
+                    <p class="label-1">
+                        Subscribe us & Get <span class="span">25% Off.</span>
+                    </p>
+
+                    <form action="" class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico"
+                                autocomplete="off" class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Subscribe</span>
+
+                            <span class="text text-2" aria-hidden="true">Subscribe</span>
+                        </button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="index.html" class="label-2 footer-link hover-underline">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="main.html" class="label-2 footer-link hover-underline">Quienes Somos</a>
+                    </li>
+
+                    <li>
+                        <a href="Catenguinas.html" class="label-2 footer-link hover-underline">Categorías</a>
+                    </li>
+
+                    <li>
+                        <a href="upycling.html" class="label-2 footer-link hover-underline">Upycling</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="label-2 footer-link hover-underline">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="https://www.facebook.com/brendasofia.linaresvillamil"
+                            class="label-2 footer-link hover-underline">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/brendisofy16/"
+                            class="label-2 footer-link hover-underline">Instagram</a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://www.google.com/maps" class="label-2 footer-link hover-underline">Google Map</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html" target="_blank"
+                        class="link">Reciclaje</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
