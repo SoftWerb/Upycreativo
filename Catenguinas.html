@@ -25,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- 
     - custom css link
@@ -133,7 +135,7 @@
                     <p class="headline-1 navbar-title">Visítanos</p>
 
                     <address class="body-4">
-                        Carrera  <br>
+                        Carrera <br>
                         81# 76a-10
 
                     </address>
@@ -153,17 +155,45 @@
 
             </nav>
 
-            <a href="#" class="btn btn-secondary">
-                <span class="text text-1">Suscribirme</span>
+            <!-- Contenedor de acciones en el header -->
+            <div class="header-actions">
+                <!-- Idioma -->
+                <div class="language-select">
+                    <img id="flag-img"
+                        src="https://reemade.com.co/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png"
+                        alt="Español" class="flag-icon">
 
-                <span class="text text-2" aria-hidden="true">Suscribirme</span>
-            </a>
+                    <select id="language">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
 
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <span class="line line-1"></span>
-            </button>
+                <!-- Buscar -->
+                <button class="icon-btn" aria-label="Buscar">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
 
-            <div class="overlay" data-nav-toggler data-overlay></div>
+                <!-- Perfil -->
+                <button class="icon-btn" aria-label="Perfil">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
+
+                <!-- Carrito -->
+                <button class="icon-btn cart-btn" aria-label="Carrito">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="cart-count">0</span>
+                </button>
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="overlay" data-nav-toggler data-overlay></div>
+
+            </div>
 
         </div>
     </header>
@@ -200,7 +230,7 @@
                 </ul>
 
 
-              <a href="#" class="hero-btn has-after">
+                <a href="#" class="hero-btn has-after">
                     <img src="img/upslia.png" width="48" height="48" alt="booking icon">
 
                     <span class="label-2 text-center span">UPYCLING</span>
@@ -223,8 +253,7 @@
         - #TESTIMONIALS
       -->
 
-            <section class="section testi text-center has-bg-image"
-                style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+            <section class="section event bg-black-10" aria-label="event">
 
                 <div class="containergrid">
                     <h1 class="Generos">Formulario de Selección Upcycling</h1>
@@ -243,10 +272,17 @@
 
                                 </div>
                                 <div class="buttons-group1">
-                                    <button type="button" class="precio">Precio: $60.000</button>
+                                    <button type="button" class="precio" onclick="agregarAlCarrito(this)"
+                                        data-precio="60000" data-nombre="Mochila Colibrii"
+                                        data-img="https://deltamaquinastexteis.com.br/wp-content/uploads/2019/09/rede-colibrii-upcycling.jpg">
+                                        Precio: $60.000
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
+
+
 
                         <!-- Hombre -->
                         <div class="card">
@@ -259,7 +295,11 @@
                                     <button type="button">Talla unico </button>
                                 </div>
                                 <div class="buttons-group1">
-                                    <button type="button" class="precio">Precio: $90.000</button>
+                                    <button type="button" class="precio" onclick="agregarAlCarrito(this)"
+                                        data-precio="90000" data-nombre="Bolso Mezclilla"
+                                        data-img="https://i.pinimg.com/736x/17/d2/93/17d293a597b196ac342c58c0185651c4.jpg">
+                                        Precio: $90.000
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +315,11 @@
                                     <button type="button">Talla unico </button>
                                 </div>
                                 <div class="buttons-group1">
-                                    <button type="button" class="precio">Precio: $15</button>
+                                    <button type="button" class="precio" onclick="agregarAlCarrito(this)"
+                                        data-precio="15000" data-nombre="Sombrero Pescador"
+                                        data-img="https://i.pinimg.com/736x/26/29/e4/2629e450a2dd14a28363b606e51ffbb2.jpg">
+                                        Precio: $15.000
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -331,29 +375,30 @@
                     </p>
 
                     <div class="wrapper">
-                        <div class="separator"></div>
-                        <div class="separator"></div>
-                        <div class="separator"></div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.164823900567!2d-74.0370906241406!3d4.741403741301509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1698189405987!5m2!1ses!2sco"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
 
                     <p class="title-1">Upycling Reciclaje De La Segunda</p>
 
                     <p class="label-1">
-                        Subscribe us & Get <span class="span">25% Off.</span>
+                        Suscríbete a nosotros y obtén <span class="span">25% Off.</span>
                     </p>
 
                     <form action="" class="input-wrapper">
                         <div class="icon-wrapper">
                             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-                            <input type="email" name="email_address" placeholder="Tu correo electrónico" autocomplete="off"
-                                class="input-field">
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico"
+                                autocomplete="off" class="input-field">
                         </div>
 
                         <button type="submit" class="btn btn-secondary">
-                            <span class="text text-1">Subscribe</span>
+                            <span class="text text-1">Suscribir</span>
 
-                            <span class="text text-2" aria-hidden="true">Subscribe</span>
+                            <span class="text text-2" aria-hidden="true">Suscribir</span>
                         </button>
                     </form>
 
@@ -385,11 +430,13 @@
                 <ul class="footer-list">
 
                     <li>
-                        <a href="https://www.facebook.com/brendasofia.linaresvillamil" class="label-2 footer-link hover-underline">Facebook</a>
+                        <a href="https://www.facebook.com/brendasofia.linaresvillamil"
+                            class="label-2 footer-link hover-underline">Facebook</a>
                     </li>
 
                     <li>
-                        <a href="https://www.instagram.com/brendisofy16/" class="label-2 footer-link hover-underline">Instagram</a>
+                        <a href="https://www.instagram.com/brendisofy16/"
+                            class="label-2 footer-link hover-underline">Instagram</a>
                     </li>
 
 
@@ -404,8 +451,8 @@
             <div class="footer-bottom">
 
                 <p class="copyright">
-                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html"
-                        target="_blank" class="link">Reciclaje</a>
+                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html" target="_blank"
+                        class="link">Reciclaje</a>
                 </p>
 
             </div>
@@ -434,6 +481,112 @@
   -->
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/idioma.js"></script>
+
+    <script>
+
+
+        let carrito = {};
+
+        function agregarAlCarrito(boton) {
+            const nombre = boton.getAttribute("data-nombre");
+            const precio = parseInt(boton.getAttribute("data-precio"));
+            const imagen = boton.getAttribute("data-img");
+
+            if (!carrito[nombre]) {
+                carrito[nombre] = {
+                    nombre: nombre,
+                    precio: precio,
+                    cantidad: 1,
+                    imagen: imagen
+                };
+            } else {
+                carrito[nombre].cantidad++;
+            }
+
+            actualizarContador();
+            mostrarNotificacion(nombre);
+        }
+
+        function actualizarContador() {
+            const totalItems = Object.values(carrito).reduce((sum, item) => sum + item.cantidad, 0);
+            document.querySelector(".cart-count").textContent = totalItems;
+        }
+
+        function mostrarNotificacion(nombre) {
+            Swal.fire({
+                title: '✅ ¡Producto agregado!',
+                html: `<p style="font-size:16px; margin-top:10px;">
+                  <strong style="color:#2ecc71;">${nombre}</strong> fue añadido al carrito 🛒
+               </p>`,
+                icon: 'success',
+                timer: 1500,
+                showConfirmButton: false,
+                background: '#f9f9f9',
+                customClass: {
+                    popup: 'swal2-notificacion-popup'
+                }
+            });
+        }
+
+
+        function mostrarCarrito() {
+            let html = "";
+
+            if (Object.keys(carrito).length === 0) {
+                html = "<p class='carrito-vacio'>Tu carrito está vacío 🛒</p>";
+            } else {
+                html = Object.values(carrito).map(item => `
+            <div class="carrito-item">
+                <img src="${item.imagen}" alt="${item.nombre}" class="carrito-img">
+                <div class="carrito-info">
+                    <p class="carrito-nombre">${item.nombre}</p>
+                    <p class="carrito-precio">Precio unidad: $${item.precio.toLocaleString()}</p>
+                    <div class="carrito-controles">
+                        <button class="btn-restar" onclick="cambiarCantidad('${item.nombre}', -1)">➖</button>
+                        <span class="carrito-cantidad">${item.cantidad}</span>
+                        <button class="btn-sumar" onclick="cambiarCantidad('${item.nombre}', 1)">➕</button>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+                const total = Object.values(carrito)
+                    .reduce((sum, item) => sum + item.precio * item.cantidad, 0);
+
+                html += `<hr><p class="carrito-total">Total: $${total.toLocaleString()}</p>`;
+            }
+
+            Swal.fire({
+                title: '🛒 Tu Carrito',
+                html: `<div class="carrito-contenido">${html}</div>`,
+                showCloseButton: true,
+                showConfirmButton: false,
+                width: 640,
+                background: '#fff',
+                customClass: {
+                    popup: 'carrito-popup'
+                }
+            });
+        }
+
+        function cambiarCantidad(nombre, cambio) {
+            if (carrito[nombre]) {
+                carrito[nombre].cantidad += cambio;
+
+                if (carrito[nombre].cantidad <= 0) {
+                    delete carrito[nombre];
+                }
+
+                actualizarContador();
+                mostrarCarrito(); // Refresca el modal
+            }
+        }
+
+        // Escucha el clic en el botón del carrito
+        document.querySelector(".cart-btn").addEventListener("click", mostrarCarrito);
+    </script>
+
 
     <!-- 
     - ionicon link
