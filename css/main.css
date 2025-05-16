@@ -3258,3 +3258,38 @@ textarea.input-field {
     }
 
 }
+
+
+/*Swall*/
+
+.input-field.error {
+  border: 2px solid red;
+}
+
+/* Ajustes para el texto dentro de los SweetAlert */
+.swal2-popup {
+  font-size: 18px !important; /* Tamaño general */
+  border-radius: 20px;
+}
+
+.swal2-title {
+  font-size: 24px !important; /* Título del modal */
+  font-weight: bold;
+ 
+}
+
+.swal2-html-container {
+  font-size: 18px !important; /* Contenido HTML dentro del modal */
+  line-height: 1.6;
+}
+
+.swal2-confirm,
+.swal2-cancel {
+  font-size: 16px !important; /* Botones */
+  padding: 10px 20px;
+}
+
+.custom-swal-popup {
+  font-size: 18px;
+}
+
