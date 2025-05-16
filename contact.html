@@ -153,18 +153,45 @@
 
             </nav>
 
-            <a href="#" class="btn btn-secondary">
-                <span class="text text-1">Suscribirme</span>
+            <!-- Contenedor de acciones en el header -->
+            <div class="header-actions">
+                <!-- Idioma -->
+                <div class="language-select">
+                    <img id="flag-img"
+                        src="https://reemade.com.co/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png"
+                        alt="Español" class="flag-icon">
 
-                <span class="text text-2" aria-hidden="true">Suscribirme</span>
-            </a>
+                    <select id="language">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
 
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <span class="line line-1"></span>
-            </button>
+                <!-- Buscar -->
+                <button class="icon-btn" aria-label="Buscar">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
 
-            <div class="overlay" data-nav-toggler data-overlay></div>
+                <!-- Perfil -->
+                <button class="icon-btn" aria-label="Perfil">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
 
+                <!-- Carrito -->
+                <button class="icon-btn cart-btn" aria-label="Carrito">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="cart-count">0</span>
+                </button>
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="overlay" data-nav-toggler data-overlay></div>
+
+            </div>
         </div>
     </header>
 
@@ -275,9 +302,9 @@
                                 class="input-field"></textarea>
 
                             <button type="submit" class="btn btn-secondary">
-                                <span class="text text-1">Book A Table</span>
+                                <span class="text text-1">Enviar</span>
 
-                                <span class="text text-2" aria-hidden="true">Book A Table</span>
+                                <span class="text text-2" aria-hidden="true">Enviar</span>
                             </button>
 
                         </form>
@@ -354,29 +381,29 @@
                     </p>
 
                     <div class="wrapper">
-                        <div class="separator"></div>
-                        <div class="separator"></div>
-                        <div class="separator"></div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.164823900567!2d-74.0370906241406!3d4.741403741301509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1698189405987!5m2!1ses!2sco"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-
                     <p class="title-1">Upycling Reciclaje De La Segunda</p>
 
                     <p class="label-1">
-                        Subscribe us & Get <span class="span">25% Off.</span>
+                        Suscríbete a nosotros y obtén <span class="span">25% Off.</span>
                     </p>
 
                     <form action="" class="input-wrapper">
                         <div class="icon-wrapper">
                             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-                            <input type="email" name="email_address" placeholder="Tu correo electrónico" autocomplete="off"
-                                class="input-field">
+                            <input type="email" name="email_address" placeholder="Tu correo electrónico"
+                                autocomplete="off" class="input-field">
                         </div>
 
                         <button type="submit" class="btn btn-secondary">
-                            <span class="text text-1">Subscribe</span>
+                            <span class="text text-1">Suscribir</span>
 
-                            <span class="text text-2" aria-hidden="true">Subscribe</span>
+                            <span class="text text-2" aria-hidden="true">Suscribir</span>
                         </button>
                     </form>
 
@@ -456,6 +483,7 @@
     - custom js link
   -->
     <script src="js/script.js"></script>
+    <script src="js/idioma.js"></script>
 
     <!-- 
     - ionicon link
