@@ -38,6 +38,9 @@
     <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
     <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 </head>
 
 <body id="top">
@@ -227,7 +230,7 @@
                 </ul>
 
 
-               <a href="#" class="hero-btn has-after">
+                <a href="#" class="hero-btn has-after">
                     <img src="img/upslia.png" width="48" height="48" alt="booking icon">
 
                     <span class="label-2 text-center span">UPYCLING</span>
@@ -281,7 +284,9 @@
 
                     <div class="form reservation-form bg-black-10">
 
-                        <form action="" class="form-left">
+                        <form id="formulario"
+                            action="https://script.google.com/macros/s/AKfycbzmPcaki01b5hIWS6nIdG7ZcApwl8hS2o6kMwzNA3o6AaZGSPL2481hwOusDayJ00t5/exec"
+                            class="form-left">
 
                             <h2 class="headline-1 text-center">Reserva en línea</h2>
 
@@ -291,23 +296,22 @@
                             </p>
 
                             <div class="input-wrapper">
-                                <input type="text" name="name" placeholder="Nombres" autocomplete="off"
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombres" autocomplete="off"
                                     class="input-field">
-
-                                <input type="email" name="email" placeholder="Correo" autocomplete="off"
+                                <input type="email" id="email" name="email" placeholder="Correo" autocomplete="off"
                                     class="input-field">
                             </div>
 
-                            <textarea name="message" placeholder="Message" autocomplete="off"
+                            <textarea name="message" id="message" placeholder="Mensaje" autocomplete="off"
                                 class="input-field"></textarea>
 
                             <button type="submit" class="btn btn-secondary">
                                 <span class="text text-1">Enviar</span>
-
                                 <span class="text text-2" aria-hidden="true">Enviar</span>
                             </button>
 
                         </form>
+
 
                         <div class="form-right text-center"
                             style="background-image: url('./assets/images/form-pattern.png')">
@@ -435,11 +439,13 @@
                 <ul class="footer-list">
 
                     <li>
-                        <a href="https://www.facebook.com/brendasofia.linaresvillamil" class="label-2 footer-link hover-underline">Facebook</a>
+                        <a href="https://www.facebook.com/brendasofia.linaresvillamil"
+                            class="label-2 footer-link hover-underline">Facebook</a>
                     </li>
 
                     <li>
-                        <a href="https://www.instagram.com/brendisofy16/" class="label-2 footer-link hover-underline">Instagram</a>
+                        <a href="https://www.instagram.com/brendisofy16/"
+                            class="label-2 footer-link hover-underline">Instagram</a>
                     </li>
 
 
@@ -454,8 +460,8 @@
             <div class="footer-bottom">
 
                 <p class="copyright">
-                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html"
-                        target="_blank" class="link">Reciclaje</a>
+                    &copy; 2025 Brenda .Upycling Creativo by <a href="index.html" target="_blank"
+                        class="link">Reciclaje</a>
                 </p>
 
             </div>
@@ -484,6 +490,7 @@
   -->
     <script src="js/script.js"></script>
     <script src="js/idioma.js"></script>
+    <script src="js/situacion.js"></script>
 
     <!-- 
     - ionicon link
